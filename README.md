@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/railken/amethyst-supplier.svg?branch=master)](https://travis-ci.org/railken/amethyst-supplier)
 
-This is a amethyst package.
+[Amethyst](https://github.com/railken/amethyst) package
 
 # Requirements
 
