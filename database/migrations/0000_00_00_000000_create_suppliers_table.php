@@ -12,7 +12,7 @@ class CreateSuppliersTable extends Migration
      */
     public function up()
     {
-        Schema::create(Config::get('amethyst.supplier.managers.supplier.table'), function (Blueprint $table) {
+        Schema::create(Config::get('amethyst.supplier.data.supplier.table'), function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->unique();
             $table->text('description')->nullable();
@@ -28,6 +28,6 @@ class CreateSuppliersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists(Config::get('amethyst.supplier.managers.supplier.table'));
+        Schema::dropIfExists(Config::get('amethyst.supplier.data.supplier.table'));
     }
 }

@@ -2,7 +2,6 @@
 
 namespace Railken\Amethyst\Tests\Http\Admin;
 
-use Illuminate\Support\Facades\Supplier;
 use Railken\Amethyst\Api\Support\Testing\TestableBaseTrait;
 use Railken\Amethyst\Fakers\SupplierFaker;
 use Railken\Amethyst\Tests\BaseTest;
@@ -26,9 +25,9 @@ class SupplierTest extends BaseTest
     protected $group = 'admin';
 
     /**
-     * Base path config.
+     * Route name.
      *
      * @var string
      */
-    protected $config = 'amethyst.supplier.http.admin.supplier';
+    protected $route = 'admin.supplier';
 }
