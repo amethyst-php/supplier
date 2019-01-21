@@ -16,7 +16,8 @@ class SupplierSchema extends Schema
     {
         return [
             Attributes\IdAttribute::make(),
-            Attributes\TextAttribute::make('name'),
+            Attributes\TextAttribute::make('name')
+                ->setRequired(true),
             Attributes\LongTextAttribute::make('description'),
             Attributes\LongTextAttribute::make('notes'),
             Attributes\BooleanAttribute::make('enabled'),
