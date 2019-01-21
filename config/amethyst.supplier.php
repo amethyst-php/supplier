@@ -35,11 +35,11 @@ return [
     'http' => [
         'admin' => [
             'supplier' => [
-                'enabled'     => true,
-                'controller'  => Railken\Amethyst\Http\Controllers\Admin\SuppliersController::class,
-                'router'      => [
-                    'as'        => 'supplier.',
-                    'prefix'    => '/suppliers',
+                'enabled'    => true,
+                'controller' => Railken\Amethyst\Http\Controllers\Admin\SuppliersController::class,
+                'router'     => [
+                    'as'     => 'supplier.',
+                    'prefix' => '/suppliers',
                 ],
             ],
         ],
