@@ -1,10 +1,10 @@
 <?php
 
-namespace Railken\Amethyst\Tests\Managers;
+namespace Amethyst\Tests\Managers;
 
-use Railken\Amethyst\Fakers\SupplierFaker;
-use Railken\Amethyst\Managers\SupplierManager;
-use Railken\Amethyst\Tests\BaseTest;
+use Amethyst\Fakers\SupplierFaker;
+use Amethyst\Managers\SupplierManager;
+use Amethyst\Tests\BaseTest;
 use Railken\Lem\Support\Testing\TestableBaseTrait;
 
 class SupplierTest extends BaseTest

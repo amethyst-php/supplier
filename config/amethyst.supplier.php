@@ -13,14 +13,14 @@ return [
         'supplier' => [
             'table'      => 'amethyst_suppliers',
             'comment'    => 'Supplier',
-            'model'      => Railken\Amethyst\Models\Supplier::class,
-            'schema'     => Railken\Amethyst\Schemas\SupplierSchema::class,
-            'repository' => Railken\Amethyst\Repositories\SupplierRepository::class,
-            'serializer' => Railken\Amethyst\Serializers\SupplierSerializer::class,
-            'validator'  => Railken\Amethyst\Validators\SupplierValidator::class,
-            'authorizer' => Railken\Amethyst\Authorizers\SupplierAuthorizer::class,
-            'faker'      => Railken\Amethyst\Fakers\SupplierFaker::class,
-            'manager'    => Railken\Amethyst\Managers\SupplierManager::class,
+            'model'      => Amethyst\Models\Supplier::class,
+            'schema'     => Amethyst\Schemas\SupplierSchema::class,
+            'repository' => Amethyst\Repositories\SupplierRepository::class,
+            'serializer' => Amethyst\Serializers\SupplierSerializer::class,
+            'validator'  => Amethyst\Validators\SupplierValidator::class,
+            'authorizer' => Amethyst\Authorizers\SupplierAuthorizer::class,
+            'faker'      => Amethyst\Fakers\SupplierFaker::class,
+            'manager'    => Amethyst\Managers\SupplierManager::class,
         ],
     ],
 
@@ -36,7 +36,7 @@ return [
         'admin' => [
             'supplier' => [
                 'enabled'    => true,
-                'controller' => Railken\Amethyst\Http\Controllers\Admin\SuppliersController::class,
+                'controller' => Amethyst\Http\Controllers\Admin\SuppliersController::class,
                 'router'     => [
                     'as'     => 'supplier.',
                     'prefix' => '/suppliers',
