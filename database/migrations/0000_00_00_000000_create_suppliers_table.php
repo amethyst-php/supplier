@@ -14,7 +14,7 @@ class CreateSuppliersTable extends Migration
     {
         Schema::create(Config::get('amethyst.supplier.data.supplier.table'), function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name')->unique();
+            $table->string('name')->index();
             $table->text('description')->nullable();
             $table->text('notes')->nullable();
             $table->boolean('enabled')->default(1);
