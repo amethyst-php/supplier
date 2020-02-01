@@ -23,25 +23,4 @@ return [
             'manager'    => Amethyst\Managers\SupplierManager::class,
         ],
     ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Http configuration
-    |--------------------------------------------------------------------------
-    |
-    | Here you may configure the routes
-    |
-    */
-    'http' => [
-        'admin' => [
-            'supplier' => [
-                'enabled'    => true,
-                'controller' => Amethyst\Http\Controllers\Admin\SuppliersController::class,
-                'router'     => [
-                    'as'     => 'supplier.',
-                    'prefix' => '/suppliers',
-                ],
-            ],
-        ],
-    ],
 ];
